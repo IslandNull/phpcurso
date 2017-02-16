@@ -7,7 +7,7 @@
 <body>
   <h1>Testando PHP</h1>
   <?php
-    echo "Ola, Mundo!";
+    echo "<h2>Ola, Mundo!</h2>";
    ?>
 </body>
 </html>
