@@ -43,3 +43,8 @@ span.foco {
     font-weight: bold;
     color: #7e050c;
 }
+
+p.center {
+  color: rgb(119, 28, 4);
+  text-shadow: 5px;
+}
