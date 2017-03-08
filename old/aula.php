@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <link rel="stylesheet" href="_css/estilo.css">
+        <link rel="stylesheet" href="../_css/estilo.css">
         <meta charset="utf-8">
         <title></title>
     </head>
     <body>
         <div>
             <?php
-                $d = isset($_GET["dia"])?$_GET["dia"]:1;
+                $d = isset($_GET["dia"])?$_GET["dia"]:0;
                 switch ($d) {
                     case 2:
                     case 3:
@@ -17,9 +17,12 @@
                     case 6:
                         echo "Dia de semana! Voce deve ir a aula!";
                         break;
-
+                    case 7:
+                    case 1:
+                        echo "Fim de semana! Voce não precisa ir a aula";
+                        break;
                     default:
-                        echo "Fim de semana! Voce não precisa ir a aula!";
+                        echo "Valor invalido";
                 }
             ?>
             <br/><hr/>
